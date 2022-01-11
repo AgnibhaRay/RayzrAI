@@ -54,8 +54,8 @@ def sendEmail(to, content):
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.ehlo()
     server.starttls()
-    server.login('youremail@gmail.com', 'your-password')
-    server.sendmail('youremail@gmail.com', to, content)
+    server.login('agnibharay.55@gmail.com', 'agni@2006')
+    server.sendmail('agnibharay.55@gmail.com', to, content)
     server.close()
 
 if __name__ == "__main__":
@@ -75,6 +75,9 @@ if __name__ == "__main__":
 
         elif 'open youtube' in query:
             webbrowser.open("youtube.com")
+        
+        elif 'name' in query:
+            speak("Your Name is Agnibha Ray")
 
         elif 'open google' in query:
             webbrowser.open("google.com")
